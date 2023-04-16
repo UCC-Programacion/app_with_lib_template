@@ -1,3 +1,5 @@
-add_executable(app_template main.cpp)
+add_executable(app1 main_app1.cpp)
+target_link_libraries(app1 PRIVATE mymath)
 
-target_link_libraries(app_template PRIVATE mymath)
+add_executable(app2 main_app2.cpp)
+target_link_libraries(app2 PRIVATE mymath)
